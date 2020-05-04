@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="7" hostname="Mhiremath-L" name="pytest" skipped="1" tests="20" time="2.038" timestamp="2020-05-04T22:17:25.517748"><testcase classname="test_comapre" file="test_comapre.py" line="2" name="test_greater" time="0.001"></testcase><testcase classname="test_comapre" file="test_comapre.py" line="8" name="test_greater_equal" time="0.000"></testcase><testcase classname="test_comapre" file="test_comapre.py" line="15" name="test_less" time="0.000"><skipped message="unconditional skip" type="pytest.skip">test_comapre.py:16: unconditional skip</skipped></testcase><testcase classname="test_div_by_3" file="test_div_by_3.py" line="2" name="test_divisible_by_3" time="0.000"></testcase><testcase classname="test_div_by_3" file="test_div_by_3.py" line="5" name="test_divisible_by_6" time="0.001"></testcase><testcase classname="test_div_by_6" file="test_div_by_6.py" line="2" name="test_divisible_by_6" time="0.000"></testcase><testcase classname="test_div_by_6" file="test_div_by_6.py" line="5" name="test_divisible_by_12" time="0.000"><failure message="assert 6 == 0
+  +6
+  -0">input_value = 30
+
+    def test_divisible_by_12(input_value):
+&gt;       assert input_value % 12 == 0
+E       assert 6 == 0
+E         +6
+E         -0
+
+test_div_by_6.py:7: AssertionError</failure></testcase><testcase classname="test_fail_suite" file="test_fail_suite.py" line="3" name="test_sqrt_failure" time="0.002"><failure message="assert 5.0 == 6
+  +5.0
+  -6">def test_sqrt_failure():
+       num = 25
+&gt;      assert math.sqrt(num) == 6
+E      assert 5.0 == 6
+E        +5.0
+E        -6
+
+test_fail_suite.py:6: AssertionError</failure></testcase><testcase classname="test_fail_suite" file="test_fail_suite.py" line="7" name="test_square_failure" time="0.000"><failure message="assert 49 == 40
+  +49
+  -40">def test_square_failure():
+       num = 7
+&gt;      assert 7*7 == 40
+E      assert 49 == 40
+E        +49
+E        -40
+
+test_fail_suite.py:10: AssertionError</failure></testcase><testcase classname="test_fail_suite" file="test_fail_suite.py" line="11" name="test_equality_failure" time="0.001"><failure message="assert 10 == 11
+  +10
+  -11">def test_equality_failure():
+&gt;      assert 10 == 11
+E      assert 10 == 11
+E        +10
+E        -11
+
+test_fail_suite.py:13: AssertionError</failure></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[1-11]" time="0.002"></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[2-22]" time="0.001"></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[3-33]" time="0.000"></testcase><testcase classname="test_multiplication" file="test_multiplication.py" line="2" name="test_multiplication_11[4-45]" time="0.000"><failure message="assert 44 == 45
+  +44
+  -45">num = 4, output = 45
+
+    @pytest.mark.parametrize(&quot;num,output&quot;,[(1,11),(2,22),(3,33),(4,45)])
+    
+    def test_multiplication_11(num,output):
+&gt;       assert 11*num == output
+E       assert 44 == 45
+E         +44
+E         -45
+
+test_multiplication.py:6: AssertionError</failure></testcase><testcase classname="test_square" file="test_square.py" line="2" name="test_sqrt" time="0.000"></testcase><testcase classname="test_square" file="test_square.py" line="6" name="testsquare" time="0.001"><failure message="assert 49 == 40
+  +49
+  -40">def testsquare():
+        num = 7
+&gt;       assert 7*7 == 40
+E       assert 49 == 40
+E         +49
+E         -40
+
+test_square.py:9: AssertionError</failure></testcase><testcase classname="test_square" file="test_square.py" line="10" name="testquality" time="0.001"><failure message="assert 10 == 11
+  +10
+  -11">@pytest.mark.others
+    def testquality():
+&gt;       assert 10 == 11
+E       assert 10 == 11
+E         +10
+E         -11
+
+test_square.py:13: AssertionError</failure></testcase><testcase classname="test_user_api" file="test_user_api.py" line="4" name="test_user_API" time="0.658"></testcase><testcase classname="test_user_api_param" file="test_user_api_param.py" line="3" name="test_user_API[60935194-mjhiremath]" time="0.579"></testcase><testcase classname="test_user_api_param" file="test_user_api_param.py" line="13" name="test_invalid_credentials" time="0.428"></testcase></testsuite></testsuites>
