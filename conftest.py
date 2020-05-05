@@ -10,3 +10,7 @@ def supply_url():
     url = "https://api.github.com"
     return url
 
+@pytest.fixture
+def post_url():
+    return "https://jsonplaceholder.typicode.com"
+
